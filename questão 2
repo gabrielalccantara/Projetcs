@@ -1,5 +1,6 @@
 #!/bin/bash
 
-read -p "Digite o nome dos diretórios a serem listados" primeiro segundo terceiro
-
-ls ./${primeiro} ./${segundo} ./${terceiro}
+read -p "Digite o nome do primeiro diretório a ser listado: " one
+read -p "Digite o nome do segundo diretório a ser listado: " two
+read -p "Digite o nome do terceiro diretório a ser listado: " three
+ls $one $two $three
