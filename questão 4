@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash 
 
 mkdir tmp
 ls ${one} ${two} ${three} &> ./tmp/que_lista_linda.txt
