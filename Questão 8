@@ -1,0 +1,27 @@
+#!/bin/bash
+
+echo "Para substituirmos algum conteúdo do conteúdo de uma variável utilizamos a seguinte sintaxe.
+
+${nome da variável/expressão a achar/substituição}
+Para exemplificar vejam o seguinte script:
+
+#! /bin/bash
+
+# Esta variável guarda uma simples frase
+# que será utilizada para demonstrar a substituição
+# de texto.
+variavel1="O Miguel gosta de animais."
+
+# Escreve a frase com o nome subsistido
+# através Miguel.
+echo ${variavel1/Miguel/"João"}
+echo ${variavel1/Miguel/"Marco"}
+echo ${variavel1/Miguel/"Daniel"}
+A finalidade é encontrar uma determinada expressão e substituir por qualquer coisa. Neste exemplo é procurado por “miguel” e substituído por vários nomes.
+
+Executamos o script da seguinte forma:
+
+miguel@LUA:~/Scripts/bash$ ./var_manipulação_ex_5.sh 
+O João gosta de animais.
+O Marco gosta de animais.
+O Daniel gosta de animais."
