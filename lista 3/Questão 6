@@ -1,0 +1,13 @@
+#!/bin/bash
+
+arq1=$1
+arq2=$2
+arq3=$3
+
+mkdir tmp
+
+read -p 'Digite o "texto proibido"' texto_proibido
+echo $texto_proibido
+cat $arq1 | grep $texto_proibido && echo $arq1 && mv $arq1 ./tmp
+cat $arq2 | grep $texto_proibido && echo $arq2 && mv $arq2 ./tmp
+cat $arq3 | grep $texto_proibido && echo $arq3 && mv $arq3 ./tmp
